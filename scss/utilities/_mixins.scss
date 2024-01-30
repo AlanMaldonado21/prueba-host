@@ -1,0 +1,51 @@
+// MIXINS
+/* 
+
+@mixin nombre-del-mixin {
+  propiedad: valor;
+  otra-propiedad: otro-valor;
+  Puedes agregar más estilos aquí 
+}//
+.elemento {
+  @include nombre-del-mixin;
+}
+*/
+// Un mixin en Sass es una especie de función o bloque de código que contiene un conjunto de declaraciones CSS. Puedes pensar en ello como una plantilla reutilizable que puede ser invocada en cualquier parte de tu código. Los mixins te permiten definir un conjunto de estilos una vez y luego usarlos en múltiples lugares del código, evitando así repetir el mismo código una y otra vez.
+
+
+// Extend El extend en Sass es otra característica útil que te permite reutilizar estilos de una clase o selector en otro sin tener que repetir el código. Es como decirle a Sass que un selector debe heredar todas las propiedades de otro. Ejemplo de cómo se utiliza el extend en Sass:
+
+
+// .estilo-compartido {
+//     propiedad: valor;
+//     otra-propiedad: otro-valor;
+//   }
+  
+//   /* Uso del extend para reutilizar el estilo */
+//   .elemento {
+//     @extend .estilo-compartido;
+//   }
+
+
+
+.section-1{
+    color: red;
+    background-color: blue;
+    @include background-principal();
+}
+
+// @mixin nombre{
+//     propiedades: valor;
+// }
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin background-principal{
+    background-color: brown;
+    color: white;
+}
+
+

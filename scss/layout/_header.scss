@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    padding: 20px;
+        nav{
+            ul{
+                display: flex;
+                list-style-type: none;
+                li{
+                    margin: 10px;
+                    a{
+                        text-decoration: none;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        color: black;
+                    }
+                }
+                #list-item{
+                    color: yellow;
+                }
+            }
+        }
+}
+
+
+body{
+    @if $color-de-fondo == black{
+        background-color: #1E2023;
+    }@else{
+        background-color: aqua;
+    }
+}

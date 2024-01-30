@@ -1,0 +1,14 @@
+// Archivo raíz de SASS.
+
+//@import 'acaVaLaRutaDelArchivo';
+
+@import './layout/header';
+@import './layout/section-1';
+@import './layout/section-2';
+@import './layout/footer';
+@import './layout/media768';
+@import './layout/section03';
+
+@import './utilities/variables';
+
+@import 'components/boton';

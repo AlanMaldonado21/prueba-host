@@ -1,0 +1,16 @@
+@mixin background-principal{
+    background-color: blue;
+}
+
+.section-1 {
+    div{
+        p{
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            @include background-principal;
+        }
+    }
+}
+
